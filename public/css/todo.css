@@ -1,0 +1,117 @@
+/* Navbar */
+nav {
+    background-color: #343a40;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Todo Page Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+/* Add Todo Button */
+#addTodoForm {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#addTodoForm .form-control {
+    width: 60%;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#addTodoForm .btn {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Todo Cards */
+ul#todoList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+ul#todoList li {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul#todoList li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul#todoList span {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Buttons */
+ul#todoList .btn {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+ul#todoList .btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+ul#todoList .btn-danger {
+    background-color: #dc3545;
+    border: none;
+
+}
+
+/* Styling Buttons in Todo Cards */
+ul#todoList .button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+ul#todoList .btn {
+    flex: 1; /* Make buttons proportional in size */
+    text-align: center;
+    padding: 15px; /* Adjust padding for better usability */
+    font-size: 0.9rem; /* Consistent font size */
+}
+

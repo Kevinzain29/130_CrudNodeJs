@@ -1,0 +1,25 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Pastikan halaman memiliki tinggi minimum penuh */
+        background-color: lightblue;
+    }
+    /* Home Page Styling */
+    .home-page {
+    min-height: 100vh; /* Ensure full height for viewport */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    }
+
+    h1 {    
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    }
+
+    .btn-primary {
+    background-color: #007bff; /* Custom button color */
+    border: none;
+    }
+
+    .btn-primary:hover {
+    background-color: #0056b3;
+    }   

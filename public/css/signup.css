@@ -1,0 +1,71 @@
+/* Target hanya elemen dalam halaman signup */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightpink;
+}
+
+.signup-page .github-logo {
+    width: 50px; /* Sesuaikan ukuran logo */
+    height: 50px;
+    display: block;
+    margin: 0 auto 1rem; /* Pusatkan logo dan tambahkan jarak bawah */
+}
+.signup-page form {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-page h1 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.signup-page form .form-label {
+    display: none; /* Menyembunyikan label agar sesuai desain */
+}
+
+.signup-page form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.signup-page form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-page form button:hover {
+    background-color: #0056b3;
+}
+
+.signup-page p {
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-page p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-page p a:hover {
+    text-decoration: underline;
+}

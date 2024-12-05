@@ -15,6 +15,7 @@ app.use(expressLayout)
 app.use(express.json())
 app.use('/todos', todosRoutes);
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -53,3 +54,4 @@ app.get('/todo-view',isAuthenticated, (req, res) => {
 app.listen(port,()=> {
     console.log(`server berjalan di http://localhost:${port}`);
 });
+

@@ -27,7 +27,7 @@ router.get('/signup', (req, res) => {
 // Route Login
 router.post('/login', (req, res) => {
     const { username, password } = req.body;
-
+    
     db.query('SELECT * FROM users WHERE username = ?', [username], (err, results) => {
         if (err) return res.status(500).send('Error fetching user');
         if (results.length === 0) return res.status(400).send('User not found');
